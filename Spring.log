@@ -59,3 +59,38 @@
 2023-04-08T11:37:28.022-05:00  INFO 13432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/onpe'
 2023-04-08T11:37:28.027-05:00  INFO 13432 --- [restartedMain] com.web.onpe.WebOnpeStsApplication       : Started WebOnpeStsApplication in 1.581 seconds (process running for 159.197)
 2023-04-08T11:37:28.029-05:00  INFO 13432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-08T12:20:49.767-05:00  INFO 13432 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-08T12:20:49.776-05:00  INFO 13432 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-08T12:20:49.779-05:00  INFO 13432 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08T12:20:49.780-05:00  INFO 13432 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-08T12:20:49.782-05:00  INFO 13432 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-04-08T12:20:49.830-05:00  INFO 13432 --- [restartedMain] com.web.onpe.WebOnpeStsApplication       : Starting WebOnpeStsApplication using Java 17.0.6 with PID 13432 (D:\Users\PC\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\WebOnpe_STS\target\classes started by PC in D:\Users\PC\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\WebOnpe_STS)
+2023-04-08T12:20:49.830-05:00  INFO 13432 --- [restartedMain] com.web.onpe.WebOnpeStsApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-04-08T12:20:49.932-05:00  INFO 13432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-08T12:20:49.932-05:00  INFO 13432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-08T12:20:49.933-05:00  INFO 13432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JDBC repository interfaces.
+2023-04-08T12:20:49.935-05:00  INFO 13432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-08T12:20:49.935-05:00  INFO 13432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-08T12:20:49.936-05:00  INFO 13432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-04-08T12:20:49.991-05:00  INFO 13432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-08T12:20:49.991-05:00  INFO 13432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-08T12:20:49.991-05:00  INFO 13432 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-08T12:20:50.003-05:00  INFO 13432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/onpe]   : Initializing Spring embedded WebApplicationContext
+2023-04-08T12:20:50.004-05:00  INFO 13432 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 172 ms
+2023-04-08T12:20:50.028-05:00  INFO 13432 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-08T12:20:50.033-05:00  INFO 13432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-04-08T12:20:51.002-05:00  INFO 13432 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection ConnectionID:31 ClientConnectionId: 00eee144-2836-4f09-8a58-fb98b43cacb9
+2023-04-08T12:20:51.002-05:00  INFO 13432 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-04-08T12:20:51.004-05:00  INFO 13432 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-04-08T12:20:51.317-05:00  INFO 13432 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-08T12:20:51.318-05:00  INFO 13432 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-08T12:20:51.330-05:00  WARN 13432 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-08T12:20:51.357-05:00  INFO 13432 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-08T12:20:51.391-05:00  WARN 13432 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-04-08T12:20:51.416-05:00  INFO 13432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-08T12:20:51.425-05:00  INFO 13432 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/onpe'
+2023-04-08T12:20:51.429-05:00  INFO 13432 --- [restartedMain] com.web.onpe.WebOnpeStsApplication       : Started WebOnpeStsApplication in 1.616 seconds (process running for 2762.599)
+2023-04-08T12:20:51.430-05:00  INFO 13432 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-08T12:22:10.516-05:00  INFO 13432 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/onpe]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-08T12:22:10.517-05:00  INFO 13432 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-08T12:22:10.518-05:00  INFO 13432 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
