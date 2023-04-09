@@ -1,8 +1,9 @@
 package com.web.onpe.services;
 
-import com.web.onpe.controller.OnpeController;
+
+import com.web.onpe.model.VotacionNumero;
 
 public interface IVotacionNumeroService {
-	public OnpeController getGrupoVotacion(String id);
+	public VotacionNumero getGrupoVotacion(String id);
 
 }
