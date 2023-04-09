@@ -16,4 +16,10 @@ public class OnpeController {
 	return "index";
      }
 
+	
+    @GetMapping("/actas")
+    public String actas() {
+	return "actas_numero";
+     }
+
 }
