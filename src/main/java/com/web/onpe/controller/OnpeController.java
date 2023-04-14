@@ -32,6 +32,10 @@ public class OnpeController  extends WebMvcAutoConfiguration{
 	return "index";
      }
 
+    @GetMapping("/resumen")
+    public String general() {
+	return "resumen_GeneralPresidencial";
+     }
 	
     @GetMapping("/actas")
     public String actas() {

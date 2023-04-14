@@ -11,6 +11,7 @@
         <link th:href="@{/css/bootstrap.css}"       rel="stylesheet" type="text/css" media="screen"/>
         <link th:href="@{/css/style.css}"       rel="stylesheet" type="text/css" media="screen"/>
         <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css" media="screen"/>
+        
         		 
         <script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/includes.js.descarga"></script>
 		<script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/jquery.min.js.descarga"></script>
@@ -26,7 +27,7 @@
 	<header >
     	<div class="container">
             <div class="pull-left logo-onpe">
-                <div class="pull-left"><a href="index.html"><img src="/images/onpe-trans.png"></a></div>
+             <div class="pull-left"><a href="http://www.onpe.gob.pe/" target="_blank"><img src="images/onpe-trans.png"></a></div>  
                 
                 <div class="pull-left">
                     <h1>PRESENTACIÓN DE RESULTADOS</h1>
@@ -40,7 +41,7 @@
     </header>
 	<div class="container">
 
-            <img src="/images/actas_portada.jpg" width="1170" height="248" class="img-responsive mg30top">
+            <img th:src="@{/images/actas_portada.jpg}" width="1170" height="248" class="img-responsive mg30top">
 
             <section class="menu navbar-default menu05">
 				    <div class="navbar-header">

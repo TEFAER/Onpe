@@ -1,33 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-    <title>ONPE - Oficina Nacional de Procesos Electorales</title>
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=9">
-    <meta name="keywords" content="onpe, ">
-    <meta name="description" content="">
-     
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
-    
-    <link href="css/media_print.css" rel="stylesheet" type="text/css" media="print">
-     
-    <script language="javascript" type="text/javascript" src="js/includes.js"></script>
-    <script language="javascript" type="text/javascript" src="js/jquery/1.11.3/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
-    <script language="javascript" type="text/javascript" src="js/ajax.js"></script>
-    <script language="javascript" type="text/javascript" src="js/funciones.js"></script>
-    <script language="javascript" type="text/javascript" src="js/resultados.js"></script>
-    <script language="javascript" type="text/javascript" src="js/actas.js"></script>		
-    
-    
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"  xmlns:th="http://www.thymeleaf.org">
+    <head>
+		   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ONPE - Oficina Nacional de Procesos Electorales</title>
+      
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+        <meta name="Keywords" content="onpe, ">
+        <meta name="description" content="">
+		 
+        <link th:href="@{/css/bootstrap.css}"       rel="stylesheet" type="text/css" media="screen"/>
+        <link th:href="@{/css/style.css}"       rel="stylesheet" type="text/css" media="screen"/>
+        <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css" media="screen"/>
+        
+        		 
+        <script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/includes.js.descarga"></script>
+		<script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/jquery.min.js.descarga"></script>
+		<script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/bootstrap.js.descarga"></script>
+		<script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/ajax.js.descarga"></script>
+        <script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/funciones.js.descarga"></script>
+        <script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/resultados.js.descarga"></script>
+        <script language="javascript" type="text/javascript" src="./ONPE - Oficina Nacional de Procesos Electoralesresultado_files/actas.js.descarga"></script>	
     
 </head>
 <body>
 <header>
     <div class="container">
 <div class="pull-left logo-onpe">
-    <div class="pull-left"><a href="http://www.onpe.gob.pe/" target="_blank"><img src="images/onpe-trans.png"></a></div>
-    
+    <div class="pull-left"><a href="http://www.onpe.gob.pe/" target="_blank"><img src="images/onpe-trans.png"></a></div>              
+                
     <div class="pull-left">
         <h1>PRESENTACIÓN DE RESULTADOS</h1>
     </div>
@@ -35,14 +35,14 @@
 
 
 <div class="pull-right logo">
-    <img src="images/eegg2016-trans.png" width="218" height="35">
+   <img th:src="@{/images/eegg2016-trans.png}" width="218" height="35">
 </div>
 
 </div>
 </header>
                     
     <div class="container">
-        <img src="images/fnd-presidencial.jpg" width="1170" height="248" class="img-responsive mg30top">
+        <img th:src="@{/images/f-presidencial.jpg}" width="1170" height="248" class="img-responsive mg30top">
 
         <section class="menu navbar-default menu05">
             <div class="navbar-header">
@@ -57,13 +57,13 @@
             <nav class="navbar-collapse bs-navbar-collapse collapse" aria-expanded="false">
                 <ul class="nav navbar-nav">
                     <li class="bt-azul act-azul">
-                        <a href="./Resumen-GeneralPresidencial.html">PRESIDENCIAL</a>
+                        <a href="https://www.web.onpe.gob.pe/modElecciones/elecciones/elecciones2016/PRP2V2016/Resumen-GeneralPresidencial.html">PRESIDENCIAL</a>
                     </li>
                     <li class="bt-amarillo">
-                        <a href="./Actas-por-Ubigeo.html">ACTAS</a>
+                        <a href="https://www.web.onpe.gob.pe/modElecciones/elecciones/elecciones2016/PRP2V2016/Actas-por-Ubigeo.html">ACTAS</a>
                     </li>
                     <li class="bt-rojo">
-                        <a href="./Participacion-ciudadana-Total-Todos-Pie.html">PARTICIPACIÓN CIUDADANA</a>
+                        <a href="https://www.web.onpe.gob.pe/modElecciones/elecciones/elecciones2016/PRP2V2016/Actas-por-Ubigeo.html">PARTICIPACIÓN CIUDADANA</a>
                     </li>
                 </ul>
             </nav>
@@ -74,9 +74,9 @@
                 <div class="col-xs-12 col-md-3">
                     <div class="menu-interna">
                         <ul>
-                            <li><a href="./Resumen-GeneralPresidencial.html" class="act-izq">RESUMEN GENERAL</a></li>
-                            <li><a href="./Resultados-Ubigeo-Presidencial.html">RESULTADOS PRESIDENCIALES</a></li>
-                            <li><a href="./Resultados-UbigeoBarras-Presidencial.html">RESULTADOS POR TIPO DE VOTOS</a></li>
+                              <li><a href="./Resumen-GeneralPresidencial.html">PRESIDENCIAL</a></li>
+                            <li><a href="https://www.web.onpe.gob.pe/modElecciones/elecciones/elecciones2016/PRP2V2016/Resultados-Ubigeo-Presidencial.html">RESULTADOS PRESIDENCIALES</a></li>
+                            <li><a href="https://www.web.onpe.gob.pe/modElecciones/elecciones/elecciones2016/PRP2V2016/Resultados-UbigeoBarras-Presidencial.html">RESULTADOS POR TIPO DE VOTOS</a></li>
                         </ul>
                     </div>
                 </div>
@@ -120,13 +120,13 @@
                                             <td>% VOTOS VÁLIDOS</td>
                                         </tr>
                                                                                                                                             <tr>
-                                                    <td><img width="40px" height="40px" src="images/simbolos/00000114.jpg" class="spaceimg"><img width="40px" height="40px" src="images/candidatos/00000114.jpg" class="spaceimg">PERUANOS POR EL KAMBIO </td>
+                                                    <td><img width="40px" height="40px" th:src="@{/images/simbolo_pkk.jpg}" class="spaceimg"><img width="40px" height="40px" th:src="@{/images/pkk.jpg}" class="spaceimg">PERUANOS POR EL KAMBIO </td>
                                                                                                                 <td>8,596,937</td>
                                                                                                                     <td> 50.120</td> 
                                                                                                             
                                                 </tr>
                                                                                                                                                                                             <tr>
-                                                    <td><img width="40px" height="40px" src="images/simbolos/00000106.jpg" class="spaceimg"><img width="40px" height="40px" src="images/candidatos/00000106.jpg" class="spaceimg">FUERZA POPULAR </td>
+                                                    <td><img width="40px" height="40px" th:src="@{/images/simbolo_keyko.jpg}" class="spaceimg"><img width="40px" height="40px" th:src="@{/images/keyko.jpg}" class="spaceimg">FUERZA POPULAR </td>
                                                                                                                 <td>8,555,880</td>
                                                                                                                     <td> 49.880</td> 
                                                                                                             
