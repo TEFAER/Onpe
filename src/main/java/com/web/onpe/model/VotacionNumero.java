@@ -53,15 +53,10 @@ public class VotacionNumero {
 	private int  VotosBlancos;
 	private int  VotosNulos;
 	private int   VotosImpugnados;
-	private String Detalle;
+
 	
 	
-	public String getDetalle() {
-		return Detalle;
-	}
-	public void setDetalle(String detalle) {
-		Detalle = detalle;
-	}
+
 	public int getIdLocalVotacion() {
 		return idLocalVotacion;
 	}
