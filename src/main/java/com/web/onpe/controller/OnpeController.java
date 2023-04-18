@@ -67,7 +67,7 @@ public class OnpeController  extends WebMvcAutoConfiguration{
     @RequestMapping("/presidencial")
     public  String presidencial(Model modelo) {
     	modelo.addAttribute("presidencial",  ipresidencial.getpresidencial());
-    	return "presidencial";
+    	return "presidencialFinal";
     	
     }
 
