@@ -16,6 +16,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 
 import com.web.onpe.services.IVotacionNumeroService;
+import com.web.onpe.services.IpresidencialServiceImp;
 
 @Configuration
 @CrossOrigin
@@ -58,6 +59,16 @@ public class OnpeController  extends WebMvcAutoConfiguration{
     public String listarnum(Model modelo,@PathVariable("id")String id) {
     	modelo.addAttribute("actas", IVotacionNumeroService.getGrupoVotacion(id));
     	return"actas_numero";
+    }
+    
+    @Autowired
+    private IpresidencialServiceImp ipresidencial;
+    
+    @RequestMapping("/presidencial")
+    public  String presidencial(Model modelo) {
+    	modelo.addAttribute("presidencial",  ipresidencial.getpresidencial());
+    	return "presidencial";
+    	
     }
 
 }
